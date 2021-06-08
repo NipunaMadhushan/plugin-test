@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.plugins.filediff.FileDiffPluginIntegrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-04T05:15:19" hostname="nipunal" time="5.571">
+  <properties/>
+  <testcase name="can successfully diff two files" classname="com.example.plugins.filediff.FileDiffPluginIntegrationTest" time="5.571">
+    <failure message="org.gradle.testkit.runner.UnexpectedBuildFailure: Unexpected build execution failure in /tmp/junit5737419890873012034 with arguments [fileDiff]&#10;&#10;Output:&#10;&#10;FAILURE: Build failed with an exception.&#10;&#10;* Where:&#10;Build file '/tmp/junit5737419890873012034/build.gradle' line: 3&#10;&#10;* What went wrong:&#10;Plugin [id: 'gradle'] was not found in any of the following sources:&#10;&#10;- Gradle Core Plugins (not a core plugin, please see https://docs.gradle.org/6.8/userguide/standard_plugins.html for available core plugins)&#10;- Gradle TestKit (classpath: /home/nipuna/Desktop/plugin-test/build/classes/java/main:/home/nipuna/Desktop/plugin-test/build/classes/groovy/main:/home/nipuna/Desktop/plugin-test/build/resources/main)&#10;- Plugin Repositories (plugin dependency must include a version number for this source)&#10;&#10;* Try:&#10;Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.&#10;&#10;* Get more help at https://help.gradle.org&#10;&#10;BUILD FAILED in 4s&#10;" type="org.gradle.testkit.runner.UnexpectedBuildFailure">org.gradle.testkit.runner.UnexpectedBuildFailure: Unexpected build execution failure in /tmp/junit5737419890873012034 with arguments [fileDiff]
+
+Output:
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/junit5737419890873012034/build.gradle' line: 3
+
+* What went wrong:
+Plugin [id: 'gradle'] was not found in any of the following sources:
+
+- Gradle Core Plugins (not a core plugin, please see https://docs.gradle.org/6.8/userguide/standard_plugins.html for available core plugins)
+- Gradle TestKit (classpath: /home/nipuna/Desktop/plugin-test/build/classes/java/main:/home/nipuna/Desktop/plugin-test/build/classes/groovy/main:/home/nipuna/Desktop/plugin-test/build/resources/main)
+- Plugin Repositories (plugin dependency must include a version number for this source)
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 4s
+
+	at org.gradle.testkit.runner.internal.DefaultGradleRunner$2.execute(DefaultGradleRunner.java:255)
+	at org.gradle.testkit.runner.internal.DefaultGradleRunner$2.execute(DefaultGradleRunner.java:251)
+	at org.gradle.testkit.runner.internal.DefaultGradleRunner.run(DefaultGradleRunner.java:324)
+	at org.gradle.testkit.runner.internal.DefaultGradleRunner.build(DefaultGradleRunner.java:251)
+	at com.example.plugins.filediff.FileDiffPluginIntegrationTest.can successfully diff two files(FileDiffPluginIntegrationTest.groovy:38)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
