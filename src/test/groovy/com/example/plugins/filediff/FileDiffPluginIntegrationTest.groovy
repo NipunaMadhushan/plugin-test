@@ -17,7 +17,7 @@ class FileDiffPluginIntegrationTest extends Specification {
 
         buildFile << """
             plugins {
-                id 'gradle'
+                id 'gradle' version '0.0.1'
             }
         """
     }
@@ -32,7 +32,6 @@ class FileDiffPluginIntegrationTest extends Specification {
                 file1 = file(${testFile1.getName()})
                 file2 = file(${testFile2.getName()})
             }
-            
         """
         when:
         def result = GradleRunner.create()
@@ -44,5 +43,4 @@ class FileDiffPluginIntegrationTest extends Specification {
         result.output.contains('Files have the same size')
         result.task(':fileDiff').outcome == TaskOutcome.SUCCESS
     }
-
 }
