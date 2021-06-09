@@ -17,7 +17,7 @@ class FileDiffPluginIntegrationTest extends Specification {
 
         buildFile << """
             plugins {
-                id 'gradle' version '0.0.1'
+                id 'gradle'
             }
         """
     }
